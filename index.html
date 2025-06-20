@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cats</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .header_container {
+      position: relative;
+      width: 100%;
+      max-width: 100vw;
+    }
+    .header_slija {
+      width: 100%;
+      display: block;
+    }
+    .header_text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 8px #000;
+      text-align: center;
+      width: 100%;
+    }
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      padding: 0.5em 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5em 1em;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #4a6fa5;
+    }
+    main {
+      padding: 2em;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    section {
+      margin-bottom: 2em;
+    }
+    h1, h2 {
+      color: #4a6fa5;
+    }
+    .cat-img {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 1em auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+    .cat-img:hover {
+      transform: scale(1.05) rotate(-2deg);
+      box-shadow: 0 8px 24px rgba(74,111,165,0.25);
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+      margin-top: 2em;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+      }
+      main {
+        padding: 1em;
+      }
+      .cat-img {
+        max-width: 60%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header_container">
+    <img src="Michelangelo.jpg" alt="" class="header_slija">
+    <div class="header_text">CATS!</div>
+  </div>
+  <nav>
+    <a href="#amazing">Amazing</a>
+    <a href="#breeds">Breeds</a>
+    <a href="#care">Care</a>
+  </nav>
+  <main>
+    <section id="amazing">
+      <h2>Why Cats Are Amazing</h2>
+      <p>Cats are beloved for their independence, playful antics, and affectionate nature. Their purring, agility, and mysterious personalities make them wonderful companions.</p>
+      <img src="mainecoon.jpg" alt="" class="cat-img">
+    </section>
+    <section id="breeds">
+      <h2>Popular Cat Breeds</h2>
+      <ul>
+        <li>Persian</li>
+        <li>Siamese</li>
+        <li>Maine Coon</li>
+        <li>Bengal</li>
+        <li>Ragdoll</li>
+      </ul>
+      <img src="diffbreeds.webp" alt="" class="cat-img">
+    </section>
+    <section id="care">
+      <h2>Cat Care Tips</h2>
+      <p>Give your cat proper nutrition, regular vet check-ups, fresh water, and a cozy resting place. Play and mental stimulation are also essential for a happy, healthy cat.</p>
+      <img src="catpet.jpeg" alt="" class="cat-img">
+    </section>
+  </main>
+  <footer>
+    <p>Cats are awesome.</p>
+  </footer>
+</body>
+</html>
